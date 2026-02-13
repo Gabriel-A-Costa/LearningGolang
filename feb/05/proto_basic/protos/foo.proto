@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package helloword;
+option go_package = "./pb";
+
+//Service Greeter
+service Greeter {
+  //RPC To Print Hello
+  rpc SayHello (SayHelloRequest) returns (SayHellorResponse);
+}
+
+message SayHelloRequest {
+  string name = 1;
+  int64 idade = 2;
+  bool is_brazilian = 3;
+}
+
+message SayHellorResponse {
+  string message = 1;
+}
