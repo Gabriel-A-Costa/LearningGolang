@@ -3,7 +3,7 @@ package service
 import (
 	"errors"
 
-	"github.com/gabriel-a-costa/api_project/model"
+	"github.com/gabriel-a-costa/LearningGolang/feb/04/api_project/model"
 )
 
 var users = []model.User{

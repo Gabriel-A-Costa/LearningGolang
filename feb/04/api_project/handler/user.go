@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/gabriel-a-costa/api_project/service"
+	"github.com/gabriel-a-costa/LearningGolang/feb/04/api_project/service"
 )
 
 type UserResponse struct {

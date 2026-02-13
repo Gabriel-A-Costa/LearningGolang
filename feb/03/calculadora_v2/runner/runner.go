@@ -3,7 +3,7 @@ package runner
 import (
 	"fmt"
 
-	"github.com/gabriel-a-costa/calculadoraV2/operacao"
+	"github.com/gabriel-a-costa/LearningGolang/feb/03/calculadora_v2/operacao"
 )
 
 type Operacao interface {

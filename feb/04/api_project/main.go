@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/gabriel-a-costa/api_project/handler"
-	"github.com/gabriel-a-costa/api_project/middleware"
+	"github.com/gabriel-a-costa/LearningGolang/feb/04/api_project/handler"
+	"github.com/gabriel-a-costa/LearningGolang/feb/04/api_project/middleware"
 )
 
 func main() {
