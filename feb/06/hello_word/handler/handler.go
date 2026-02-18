@@ -1,12 +1,25 @@
 package handler
 
-import "net/http"
+import (
+	"net/http"
+	kivik "github.com/go-kivik/kivik/v4"
+)
 
-func HandleHelloWorld(w http.ResponseWriter, r *http.Request) {
+type Handler struct {
+	couchdb *kivik.DB
+}
+
+func New(c *kivik.DB) *Handler {
+	return &Handler{
+		couchdb: c,
+	}
+}
+
+func (h *Handler) HandleHelloWorld(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("World"))
 }
 
-func HandlePingPong(w http.ResponseWriter, r *http.Request) {
+func (h *Handler) HandlePingPong(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Pong"))
 }
 

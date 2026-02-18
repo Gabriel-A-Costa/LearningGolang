@@ -1,0 +1,10 @@
+github.com/go-kivik/couchdb/v4 v4.0.0-20230828195858-5c44e9a72d49 h1:btWohC0zDHSDJ4cgTpgAGubQdIk8goe3d7vGvlmhBYo=
+github.com/go-kivik/couchdb/v4 v4.0.0-20230828195858-5c44e9a72d49/go.mod h1:8HwNVdyXOfSgFnrSXf9qb1JkCirjo3hR+jEmdBnu9to=
+github.com/go-kivik/kivik/v4 v4.5.2 h1:Xi6QyjscrWrSRQEEW/25vaWyh20ZCg3LhTm6AqFRZCc=
+github.com/go-kivik/kivik/v4 v4.5.2/go.mod h1:5YlQJZim4qvaJ3T0fCAS6U4oaN4hzXK6CVY9nvN4Phg=
+github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
+github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+golang.org/x/net v0.35.0 h1:T5GQRQb2y08kTAByq9L4/bz8cipCdA8FbRTXewonqY8=
+golang.org/x/net v0.35.0/go.mod h1:EglIi67kWsHKlRzzVMUD93VMSWGFOMSZgxFjparz1Qk=
+golang.org/x/sync v0.11.0 h1:GGz8+XQP4FvTTrjZPzNKTMFtSXH80RAzG+5ghFPgK9w=
+golang.org/x/sync v0.11.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=
