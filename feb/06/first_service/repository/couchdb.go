@@ -23,18 +23,19 @@ func New(c *kivik.DB) *Repository {
 	}
 }
 
-fun (repo *Repository) Create(ctx context.Context, nt model.NotebookEntityDomain) {
-	notebook_couch := repository.NotebookCouch{
-		ID: nt.id,
-		Name: nt.Name,
+fun (repo *Repository) Create(ctx context.Context, nt model.NotebookEntityDomain) erro {
+	notebook_couch := NotebookCouch{
+		ID:          nt.id,
+		Name:        nt.Name,
 		Description: nt.Description,
-		Rev: "",
+		Rev:         "",
 	}
 
-	resp, err := repo.couchdb.Put(ctx, id, notebook_couch)
+	resp, err := repo.couchdb.Put(ctx, nt.id, notebook_couch)	
+
 	if err != nil {
-		nil, err
+		return err
 	}
 
-	fmt.Println("couch resp: ", resp)
+	return nil
 }

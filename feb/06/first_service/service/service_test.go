@@ -1,3 +1,7 @@
 package service_test
 
-func test_create() {}
+import "testing"
+
+func TestValidateNotebookName(t *testing.T) {
+
+}
