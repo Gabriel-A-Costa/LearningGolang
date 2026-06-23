@@ -1,10 +1,13 @@
 {
-  "level": "fatal",
-  "ts": 1782216627.765339,
-  "caller": "zap-logging/main.go:15",
-  "msg": "Something went terrible wrong",
-  "context": "main",
-  "code": 500,
-  "error": "An error occurred",
-  "stacktrace": "main.main\n\t/Users/gabrielalcantaradacosta/Desktop/projetos/GO/LearningGolang/jun/zap/zap-logging/main.go:15\nruntime.main\n\t/opt/homebrew/Cellar/go/1.26.0/libexec/src/runtime/proc.go:290"
+  "level": "info",
+  "timestamp": "2026-06-23T10:58:10.495-0300",
+  "msg": "GET request to /search?q=teste completed",
+  "git_revision": "aa42a98656f557b56bf36c21768cb3580656c1e0",
+  "go_version": "go1.26.0",
+  "correlation_id": "d8t91si5ufc0bdlsa8q0",
+  "method": "GET",
+  "url": "/search?q=teste",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+  "status_code": 500,
+  "elapsed_ms": 0.308603542
 }

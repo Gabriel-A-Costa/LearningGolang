@@ -10,5 +10,11 @@ func main() {
 
 	defer log.Sync()
 
-	log.Info("login", zap.Any("user", logger.User{ID: "1", Name: "João", Email: "joao@email.com", Password: "2312314"}))
+	// Amostragem
+	u := logger.User{ID: "1", Name: "João", Email: "joao@email.com", Password: "2312314"}
+
+	// log.Info("login", zap.Any("user", u))
+
+	child := log.With(zap.String("name", "main"))
+	child.Info("an info log", zap.Any("user", u))
 }

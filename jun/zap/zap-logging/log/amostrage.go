@@ -21,6 +21,8 @@ type SensitiveFieldEncoder struct {
 	cfg zapcore.EncoderConfig
 }
 
+// The Methods EncodeEntry and Clone exist in zapcore.Encoder
+
 func (e *SensitiveFieldEncoder) EncodeEntry(
 	entry zapcore.Entry,
 	fields []zapcore.Field) (*buffer.Buffer, error) {
@@ -38,6 +40,12 @@ func (e *SensitiveFieldEncoder) EncodeEntry(
 	}
 
 	return e.Encoder.EncodeEntry(entry, filtered)
+}
+
+func (e *SensitiveFieldEncoder) Clone() zapcore.Encoder {
+	return &SensitiveFieldEncoder{
+		Encoder: e.Encoder.Clone(),
+	}
 }
 
 func NewSensitiveFieldsEncoder(config zapcore.EncoderConfig) zapcore.Encoder {
