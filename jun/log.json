@@ -1,0 +1,10 @@
+{
+  "level": "fatal",
+  "ts": 1782216627.765339,
+  "caller": "zap-logging/main.go:15",
+  "msg": "Something went terrible wrong",
+  "context": "main",
+  "code": 500,
+  "error": "An error occurred",
+  "stacktrace": "main.main\n\t/Users/gabrielalcantaradacosta/Desktop/projetos/GO/LearningGolang/jun/zap/zap-logging/main.go:15\nruntime.main\n\t/opt/homebrew/Cellar/go/1.26.0/libexec/src/runtime/proc.go:290"
+}

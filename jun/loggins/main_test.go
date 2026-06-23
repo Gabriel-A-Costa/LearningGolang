@@ -11,6 +11,8 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
+//RUN: go test -bench=. -benchmem
+
 func BenchmarkZap(b *testing.B) {
 	encoderCfg := zapcore.EncoderConfig{
 		TimeKey:     "ts",
