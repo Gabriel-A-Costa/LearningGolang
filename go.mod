@@ -4,6 +4,7 @@ go 1.25.5
 
 require (
 	github.com/gofiber/fiber/v2 v2.52.11
+	github.com/google/uuid v1.6.0
 	github.com/gorilla/mux v1.8.1
 	github.com/labstack/echo/v4 v4.15.0
 	github.com/rs/zerolog v1.35.1
@@ -15,7 +16,6 @@ require (
 require (
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
-	github.com/google/uuid v1.6.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
 	github.com/labstack/gommon v0.4.2 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
